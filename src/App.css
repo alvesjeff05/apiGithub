@@ -1,42 +1,122 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: rgb(34,40,49);
+  background: linear-gradient(120deg, rgba(34,40,49,1) 0%, rgba(57,62,70,1) 35%, rgba(249,109,0,1) 63%, rgba(242,242,242,1) 100%);
+}
+
 #root {
+  height: 60vh;
+  width: 50vw;
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 5rem;
   text-align: center;
+  border: groove;
+  background-color: black;
+  opacity: 0.7;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.box{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.caixa-media{
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.caixa-media p{
+  margin-left: 120px;
 }
 
-.card {
-  padding: 2em;
+.inicio{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.read-the-docs {
-  color: #888;
+.inicio p{
+  border: groove;
+  border-radius: 30px;
+  width: 30vw;
+  height: 3vh;
+  display: flex;
+  flex-direction: row;
+  align-items: right;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.inicio img{
+  margin-top: 30px;
+  border: none;
+  background-color: black;
+}
+
+#foto{
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  display: flex;
+  align-items: left;
+  justify-content: column;
+  background-image: url('./assets/imagem/github.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+hr{
+  margin-top: 20px;
+
+}
+
+label{
+  font-weight: bolder;
+}
+
+p{
+  border: groove;
+  border-radius: 30px;
+  width: 30vw;
+  height: 3vh;
+  display: flex;
+  flex-direction: row;
+  align-items: right;
+  justify-content: center;
+  margin-top: 30px;
+
+}
+
+input{
+  margin-left: 10px;
+}
+
+.btn{
+  background-image: linear-gradient(to right, #FF4E50 0%, #F9D423  51%, #FF4E50  100%);
+  margin: 10px;
+  padding: 5px 25px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: flex;
+  
+}
+
+.btn-grad:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+ 
 }

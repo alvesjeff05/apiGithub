@@ -1,4 +1,3 @@
-import { FaGithub } from "react-icons/fa";
 import { useState } from 'react'
 import axios from 'axios'
 import './App.css'
